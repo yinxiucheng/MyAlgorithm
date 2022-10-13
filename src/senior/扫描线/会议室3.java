@@ -42,35 +42,30 @@ public class 会议室3 {
             boundaries.offer(new Boundary(insertInterval.start, 1));
             boundaries.offer(new Boundary(insertInterval.end, -1));
         }
-        Queue<Boundary> queue = new PriorityQueue<>(boundaries);
-
         int index = 0;
         for (int[] ask: asks) {
-            boundaries.offer(new Boundary(ask[0], 1));
-            boundaries.offer(new Boundary(ask[1], -1));
-            int meetings = 0;
-            int maxMeetings = 0;
-            while (!boundaries.isEmpty()){
-                Boundary boundary = boundaries.poll();
-                if (boundary.type == 1){
-                    meetings ++;
-                }
-                if (boundary.type == -1){
-                    meetings --;
-                }
-                maxMeetings = Math.max(meetings, maxMeetings);
-                if (meetings > rooms){
-                    break;
-                }
-            }
-            if (maxMeetings <= rooms){
-                result[index++] = true;
-            }else {
-                result[index++] = false;
-            }
-//            boundaries.clear();
-            boundaries = new ArrayDeque<>(queue);
+            PriorityQueue<Boundary> queue = new PriorityQueue<>(boundaries);
+            result[index++] = canAdd(ask, rooms, queue);
         }
         return result;
+    }
+
+    private static boolean canAdd(int[] ask, int rooms, PriorityQueue<Boundary> boundaries){
+        boundaries.offer(new Boundary(ask[0], 1));
+        boundaries.offer(new Boundary(ask[1], -1));
+        int meetings = 0;
+        while (!boundaries.isEmpty()){
+            Boundary boundary = boundaries.poll();
+            if (boundary.type == 1){
+                meetings ++;
+            }
+            if (boundary.type == -1){
+                meetings --;
+            }
+            if (meetings > rooms){
+                return  false;
+            }
+        }
+        return true;
     }
 }
