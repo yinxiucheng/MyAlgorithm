@@ -28,7 +28,6 @@ import java.util.List;
 public class 论文查重 {
 
     public float getSimilarity(List<String> words1, List<String> words2, List<List<String>> pairs) {
-
         return 0.0f;
     }
 }
