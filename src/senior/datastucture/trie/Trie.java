@@ -1,4 +1,4 @@
-package senior.trie;
+package senior.datastucture.trie;
 
 /**
  * 442 · 实现 Trie（前缀树）

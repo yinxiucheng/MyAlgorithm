@@ -1,4 +1,4 @@
-package senior.trie;
+package senior.datastucture.trie;
 
 import java.util.HashMap;
 import java.util.Map;

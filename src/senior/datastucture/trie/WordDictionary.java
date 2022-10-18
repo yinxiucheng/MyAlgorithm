@@ -1,4 +1,4 @@
-package senior.trie;
+package senior.datastucture.trie;
 
 public class WordDictionary {
 
