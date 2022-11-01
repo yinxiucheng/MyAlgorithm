@@ -1,4 +1,4 @@
-package senior.segmenttree;
+package senior.datastucture.segmenttree;
 
 import junior.datamodel.Interval;
 

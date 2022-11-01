@@ -1,4 +1,4 @@
-package senior.segmenttree;
+package senior.datastucture.segmenttree;
 
 /**
  * https://www.lintcode.com/problem/207/?showListFe=true&page=1&problemTypeId=2&tagIds=395&pageSize=50

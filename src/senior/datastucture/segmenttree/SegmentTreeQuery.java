@@ -1,4 +1,4 @@
-package senior.segmenttree;
+package senior.datastucture.segmenttree;
 
 /**
  * 202 · 线段树的查询

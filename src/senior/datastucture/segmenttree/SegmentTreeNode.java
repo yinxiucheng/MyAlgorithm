@@ -1,4 +1,4 @@
-package senior.segmenttree;
+package senior.datastucture.segmenttree;
 
 public class SegmentTreeNode {
     public int start, end, max;

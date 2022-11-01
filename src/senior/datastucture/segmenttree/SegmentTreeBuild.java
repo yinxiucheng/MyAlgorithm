@@ -1,4 +1,4 @@
-package senior.segmenttree;
+package senior.datastucture.segmenttree;
 
 /**
  * 201 · 线段树的构造

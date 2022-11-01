@@ -1,4 +1,4 @@
-package senior.segmenttree;
+package senior.datastucture.segmenttree;
 
 import java.util.ArrayList;
 import java.util.List;
