@@ -9,7 +9,7 @@ import java.util.*;
  *
  *
  */
-public class ConstructBinaryTree {
+public class 构造二叉树 {
 
 //            pair.length> = 1。
 //            “more children” 表示一个节点有两个以上的节点。
