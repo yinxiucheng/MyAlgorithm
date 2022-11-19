@@ -20,7 +20,7 @@ package senior.dp.背包型;
  * 装4和5.
  *
  */
-public class 背包问题1 {
+public class 背包1 {
 
     public int backPack(int m, int[] A) {
         int n = A.length;
