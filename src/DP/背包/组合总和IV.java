@@ -1,4 +1,4 @@
-package DP;
+package DP.背包;
 
 /**
  * https://www.lintcode.com/course/42/learn/564?chapterId=306&sectionId=1814&extraParams=%7B%22moduleSource%22%3A%22lc-course%3A42%22%7D&ac=false
