@@ -36,6 +36,7 @@ public class 买卖股票3 {
             for (j = 2; j <= 5 ; j += 2) {
                 f[i][j] = f[i-1][j - 1];// 刚买入，
 
+                //股票拿手里也获益，
                 if (i > 1 && f[i-1][j] != Integer.MIN_VALUE){
                     f[i][j] = Math.max(f[i][j], f[i-1][j] + P[i-1] - P[i-2]);
                 }
